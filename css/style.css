@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root{
+    --yellowTrans: rgba(249, 228, 148, 0.5);
+    --mainYellow: rgb(249, 228, 148);
+    --mainBlack: #000;
+}
+body{
+    font-family: 'Kaushan Script', cursive !important;
+    color: var(--mainBlack);
+}
+
+.my-link{
+    font-size: 1.2rem;
+    text-decoration: none !important;
+    color: #fff;
+    margin-right: 30px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 400;
+    
+       
+}
+.my-link:hover{
+    color:#fed049 ;    
+}
+.current{
+    color: black;
+}
+.current:link{
+    background: #fed049;
+    
+}
+.current:hover{
+    color: black;
+}
+
+.nav-item{
+    margin-right: 50px;
+        
+}
+
+.navbar-collapse{
+    margin-left: 20vw;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.toggler-icon{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.max-height{
+    min-height: calc(100vh - 76px);
+    background:
+        url("/img/img-banner.jpg") center/cover fixed no-repeat;
+    position: relative;
+    
+    
+}
+.banner{
+    position: absolute;
+    top: 20vh;
+    color: #fff;
+    background:rgba(0,0,0,0.2);
+}
+.banner-title{
+    font-size: 3rem;      
+}
+.banner-link:hover{
+    color: #fed049;
+}
+.link-button{
+    background: #fff;
+    border: 1 px solid #444;
+    color: black;
+    font-size: 1rem;
+    padding: 3px 20px 3px 20px;
+    text-decoration: none;
+    border-radius: 10px;    
+    
+}
+.link-button:hover{
+   color: black;
+    background: #fed049;    
+}
+
+.about-img-container{
+    position: relative;
+}
+/* hakkımızad çerçeve ekleme */
+.about-img-container::before{
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: -1.2rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid #444;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+.about-img-container:hover::before{
+    top: 0;
+    left: 0;
+}
+/* store items */
+.store{
+    background-color: #dadedf;
+}
+.img-container{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.store-img{
+    transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img{
+    transform: scale(1.2);
+}
+
+.store-item-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.75rem;
+    background-color: #fed049;
+    border-top-left-radius: 1rem;
+    transition: all 1s ease-in-out;
+    transform: translate(100%,100%);
+}
+.img-container:hover .store-item-icon{
+    transform: translate(0,0);
+}
+.store-item-icon:hover{
+    color: #fff;
+}
+
+
+@media (max-width:991.98px) {
+    .my-link{
+        margin-bottom: 20px;
+    }
+    .navbar-nav{
+        width: 40vw;
+       margin: auto;
+    }
+}
+
